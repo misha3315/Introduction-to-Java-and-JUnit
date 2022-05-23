@@ -21,4 +21,13 @@ public class MainClassTest {
         Assert.assertTrue("Ошибка!!! Ожидаемое значение меньше 45", a < b);
     }
 
+    @Test
+    public void testGetClassString() {
+        String a = "Hello";
+        String b = "hello";
+        String c = main.getClassString();
+
+        Assert.assertTrue("В возвращаемой строке нет Hello или hello", c.contains(a) || c.contains(b));
+    }
+
 }

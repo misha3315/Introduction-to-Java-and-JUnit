@@ -12,4 +12,9 @@ public class MainClass {
         return classNumber;
     }
 
+    private String classString = "Hello, world";
+
+    public String getClassString() {
+        return classString;
+    }
 }
