@@ -13,4 +13,12 @@ public class MainClassTest {
         Assert.assertEquals("Ошибка!!! Ожидаемое значение не равно 14", a, b);
     }
 
+    @Test
+    public void testGetClassNumber() {
+
+        int a = 45;
+        int b = main.getClassNumber();
+        Assert.assertTrue("Ошибка!!! Ожидаемое значение меньше 45", a < b);
+    }
+
 }
